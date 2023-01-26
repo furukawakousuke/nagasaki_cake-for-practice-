@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :admins do
+  namespace :admin do
     root to:'homes#top'
     resources :orders,only: [:show,:update]
     resources :customers,only: [:index,:show,:edit,:update]
